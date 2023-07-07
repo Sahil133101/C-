@@ -9,8 +9,10 @@ using namespace std;
     cout<< "size of b" <<sizeof(b)<<endl;
 
     bool c;
-     cout<<"size of c "<<sizeof(c);
+     cout<<"size of c "<<sizeof(c)<<endl;
 
+     char d;
+     cout<<"size of d "<<sizeof(d);
 
 
     return 0;
