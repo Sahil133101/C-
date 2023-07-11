@@ -1,29 +1,18 @@
 #include<iostream>
 using namespace std;
- int main (){
-    int a,b,c;
-    cin>>a,b,c;
 
-    if(a>b){
-        if(a>c)
-        cout<< a << endl;
-    
-    else{
-        cout<< c << endl;
+int main(){
+    int n;
+
+    cin>>n;
+
+    int i=1;
+
+    while(i<=10){
+
+        int result = n*i;
+        cout << n<<"*"<<i<<"="<<result<<endl;
+        i++;
     }
-    }
-    else {
-        if (b>c){
-            cout<<b<< endl;
-
-        }
-    
-         else {
-        cout<< c<<  endl;
-
-          }
-    }
-
     return 0;
-
- }
+}
