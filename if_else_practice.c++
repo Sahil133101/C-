@@ -58,29 +58,61 @@
 // 	return 0;
 // }
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main(){
+// int main(){
 
-    int =  service;
-    int = year;
+//     int =  service;
+//     int = year;
     
 
-    cout<<"your year of service";
-    cin>> service;
-    cout<<"your salary";
-    cin>> year;
+//     cout<<"your year of service";
+//     cin>> service;
+//     cout<<"your salary";
+//     cin>> year;
 
-    if (year>5){
-        int bonus = cout<< salary* 5%<<;
+//     if (year>5){
+//         int bonus = cout<< salary* 5%<<;
 
         
+//     }
+//     else {
+//         cout<<"not elegible for";
+//     }
+
+//     return 0;
+
+// }
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    char ch;
+    
+    // Ask user for a character
+    cout << "Enter a character: ";
+    cin >> ch;
+    
+    // Check if the character is lowercase
+    if (ch >= 'a' && ch <= 'z') {
+        cout << "The entered character is lowercase." << endl;
     }
+    // Check if the character is uppercase
+    else if (ch >= 'A' && ch <= 'Z') {
+        cout << "The entered character is uppercase." << endl;
+    }
+    // If the character is neither lowercase nor uppercase
     else {
-        cout<<"not elegible for";
+        cout << "The entered character is not a lowercase or uppercase letter." << endl;
     }
-
+    
     return 0;
-
 }
+
+
+
+
+
+
