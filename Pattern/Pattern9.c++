@@ -12,6 +12,7 @@ int main(){
          char ch ='A'+i+j-2;
         while(j<=n){
             cout<<ch;
+            ch=ch+1;
             j=j+1;
             
         }
