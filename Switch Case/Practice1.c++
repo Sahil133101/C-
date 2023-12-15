@@ -13,13 +13,14 @@ int main(){
         break;
 
     case 2:
-        cout<<"hello"<<endl;;
+        cout<<"hello"<<endl;
+        break;
 
 
     
     default:
     cout<<"bye"<<endl;
-        break;
+        
     }
     return 0;
 
