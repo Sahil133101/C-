@@ -14,15 +14,10 @@ int main(){
 
     case 2:
         cout<<"hello"<<endl;
-        break;
+        continue;
 
-
-    
     default:
-    cout<<"bye"<<endl;
-        
+        cout<<"bye"<<endl;
     }
     return 0;
-
-
 }
