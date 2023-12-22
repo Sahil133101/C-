@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+
+
 int FirstOcc(int arr[], int size, int key) {
     int start = 0;
     int end = size - 1;
@@ -49,6 +51,10 @@ int main() {
     int even[5] = {1, 2, 3,3, 5};
     cout << "First Occurrence: " << FirstOcc(even, 5, 3) << endl;
     cout << "Last Occurrence: " << LastOcc(even, 5, 3) << endl;
+
+    int  total (LastOcc - FirstOcc)+ 1;
+
+    cout<<total ;
 
     return 0;
 }
