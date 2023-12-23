@@ -49,10 +49,12 @@ int LastOcc(int arr[], int size, int key) {
 
 int main() {
     int even[5] = {1, 2, 3,3, 5};
+    int key = 3;
     cout << "First Occurrence: " << FirstOcc(even, 5, 3) << endl;
     cout << "Last Occurrence: " << LastOcc(even, 5, 3) << endl;
 
-    int  total (LastOcc - FirstOcc)+ 1;
+    int total = (LastOcc(even, 5, key) - FirstOcc(even, 5, key)) + 1;
+
 
     cout<<total ;
 
