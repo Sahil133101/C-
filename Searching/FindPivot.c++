@@ -2,7 +2,7 @@
 using namespace std ;
 
 
-int Pivot (int n, int arr[]){
+int Pivot ( int arr[], int n){
     int start =0;
     int end = n-1;
 
@@ -21,29 +21,23 @@ int Pivot (int n, int arr[]){
 
         }
 
-        mid  =(start+end)/2;
+        mid  =  (start+end)/2;
     }
 
     return start;
 }
 
 
-void Array(int n, int arr[]){
-    for(int i=0; i<n; i++){
-        cin>>arr[i];
 
-    }
-}
 
 int main(){
-    int n;
-    cin>>n;
+    
 
-    int arr[n];
+    int arr[5] = {8, 10 , 17 , 1 ,3};
 
-    Array(n, arr);
 
-    int a = Pivot(n , arr);
+
+    int a = Pivot(arr,5);
 
     cout<<a;
 
