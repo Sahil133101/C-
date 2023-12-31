@@ -5,6 +5,9 @@ int main(){
     int m;
     cin>>m;
 
+
+    int n;
+
     int arr[m];
 
     for(int i=1;i<=m;i++){
