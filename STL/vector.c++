@@ -34,7 +34,7 @@ int main(){
 
     cout<<"after pop"<<endl;
     for(int i:v){
-        cout<<" ";
+        cout<<i<<" ";
     }
 
 
