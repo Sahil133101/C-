@@ -15,7 +15,7 @@ cout<<binary_search(v.begin(),v.end(),2)<<endl;
 cout<<"hello world"<<endl;
 
 int a=5;
-int b=3;
+int b=2;
 
 cout<<"max"<<max(a,b)<<endl;
 
