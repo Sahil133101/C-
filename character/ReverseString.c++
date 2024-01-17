@@ -6,10 +6,12 @@ void rev(char name[], int n) {
     int e = n - 1;
 
     while (s < e) {
-        
-        swap(name[s++], name[e--]);
-        
-
+        if (name[s] == ' ') {
+            swap(name[s++], name[e--]);
+        }
+        else {
+            s++;
+        }
     }
 }
 
@@ -25,8 +27,8 @@ int main() {
     const int max_length = 20;
     char name[max_length];
 
-    cout << "Enter a string (up to 10 characters): ";
-    cin >> name;
+    cout << "Enter a string (up to 20 characters): ";
+    cin.getline(name, max_length);  // Use getline to read the entire line
 
     int len = length(name);
 
