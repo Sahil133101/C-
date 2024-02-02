@@ -3,9 +3,11 @@ using namespace std;
 
 int main(){
 
-    int num =5;
+    
+
+    int j=5;
  
-    int *p =&num;
+    int *p =&j;
 
     int *q = p;
 
