@@ -7,7 +7,12 @@ int main(){
     cout<<*arr<<endl;
 
 
-    cout<<*arr+5;
+    cout<<*arr+5<<endl;
+    
+    cout<<*(arr+5)<<endl;
+
+     cout<<(*arr)+5;
+
 
     return 0;
 }
