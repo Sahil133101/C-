@@ -8,9 +8,13 @@ int ch = 'e';
 
 cout<< sizeof(ch)<<endl;
 
-int *c = &ch;
+int *c = &ch; // first method
 
-cout<<sizeof(c);
+cout<<sizeof(c)<<endl;
+
+int *b = new int ;
+
+cout<<sizeof(b);
 
 
     return 0;
