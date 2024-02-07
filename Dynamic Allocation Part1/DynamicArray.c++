@@ -16,6 +16,9 @@ int *b = new int ;
 
 cout<<sizeof(b);
 
+delete b;
+delete c'
+
 
     return 0;
 }
