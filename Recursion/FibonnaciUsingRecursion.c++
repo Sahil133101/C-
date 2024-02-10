@@ -1,25 +1,37 @@
 #include<iostream>
 using namespace std;
 
-void fibonacci(int n1, int n2, int n3){
+int f(int n){
 
-    int nextTerm =0;
+    // int nextTerm =0;
 
-    cout<<n1<<" "<<n2<<" "<<endl;
+    // cout<<n1<<" "<<n2<<" "<<endl;
 
-    for(int i=2 ; i<=n3; i++){
+    // for(int i=2 ; i<=n3; i++){
 
-        nextTerm =  n1+n2;
+    //     nextTerm =  n1+n2;
         
-        cout<<nextTerm<<" "<<endl;
-        n1 = n2;
-        n2  = nextTerm;
+    //     cout<<nextTerm<<" "<<endl;
+    //     n1 = n2;
+    //     n2  = nextTerm;
 
 
       
 
-    }
+   // }
+   // base case 
+   if(n==0){
+    return 0;
+   }
+   if(n==1){
+    return 1;
+   }
 
+int ans =f(n-1)+f(n-2);
+
+//cout<<ans<<" "<<endl;
+
+return  ans;
   
 
 
@@ -27,17 +39,22 @@ void fibonacci(int n1, int n2, int n3){
 
 int main(){
 
-    int n1 =0;
+    int n;
+    cin>>n;
+    // cout << "Fibonacci Series: ";
+    // for (int i = 0; i < n; ++i) {
+    //     cout << fibonacci(i) << " ";
+    // }
     
 
-    int n2 =1;
+    // int n2 =1;
 
    
-    int n3;
+    // int n3;
 
-    cin>>n3;
+    // cin>>n3;
 
-    fibonacci(n1, n2 , n3);
+cout<< f(n);
 
     return 0;
 }
