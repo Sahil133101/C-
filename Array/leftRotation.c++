@@ -27,12 +27,15 @@ void left(int arr[], int n, int k){
 int main(){
     
     int n;
+    cout<<"enter the value of n";
     
     cin>>n;
     
     int arr[n];
+    cout<<"enter the value of array"; 
     
     int k;
+    cout<<"enter the value of rotation";
     cin>>k;
     
     for(int i=0; i<n; i++){
