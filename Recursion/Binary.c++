@@ -7,9 +7,9 @@ bool isSorted(int *arr, int n){
         return true;
  }
 
- if(arr[0]>arr[1]){
+ if(arr[0]>arr[1])
     return false;
- }
+ 
  else{
     bool remainigpart =  isSorted(arr+1,  n-1);
         return remainigpart;
@@ -34,9 +34,7 @@ int main(){
     if(ans){
         cout<<"Array is sorted";
     }
-    else {
-        cout<<"notsorted";
-    }
+   
 
 
     return 0;
