@@ -33,6 +33,8 @@ int main(){
 
     if(ans){
         cout<<"Array is sorted";
+
+        cout<<"Array is not sorted"
     }
    
 
