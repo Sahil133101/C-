@@ -1,9 +1,12 @@
 #include<iostream>
 using namespace std;
 
-bool checkpalindrome(string str, int i, int j) {
+bool checkpalindrome(string str, int i) {
     // base case
-    if(i >= j) {
+
+    int n  = str.length();
+    int j = str.length()-i-1;
+    if(i >=j) {
         return true;
     }
 
@@ -11,14 +14,14 @@ bool checkpalindrome(string str, int i, int j) {
         return false;
     }
     else {
-        return checkpalindrome(str, i + 1, j - 1);
+        return checkpalindrome(str, i + 1);
     }
 }
 
 int main() {
     string str = "NAMAN";
 
-    bool isPalindrome = checkpalindrome(str, 0, str.length() - 1);
+    bool isPalindrome = checkpalindrome(str, 0);
     if(isPalindrome) {
         cout << "It's a palindrome";
     }
