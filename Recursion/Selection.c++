@@ -17,7 +17,7 @@ for(int i=0; i<n;i++){
 
 sort(n,arr);
 for(int i=0; i<n; i++){
-    cout<<arr[i]l
+    cout<<arr[i];
 }
     return 0;
 }
