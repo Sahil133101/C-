@@ -1,40 +1,33 @@
 #include<iostream>
 using namespace std;
 
-void bubbleSort(int n, int arr[]) {
-    if (n <= 1) {
-        cout << "Array is already sorted\n";
-        return;
+void bubble(int arr[] , int n){
+    // base case 
+    if(n==1 || n==0){
+        return ;
     }
-
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-                swap(arr[j], arr[j + 1]);
-            }
+  // case solved largest element into last
+    for(int i=0 ;i<n; i++){
+        if(arr[i]> arr[i+1]){
+            swap(arr[i], arr[i+1]);
         }
     }
+
+    bubble(arr,n-1);
 }
 
-int main() {
+int  main(){
     int n;
-    cout << "Enter the number of elements: ";
-    cin >> n;
+    cin>>n;
+
     int arr[n];
 
-    cout << "Enter " << n << " elements: ";
-    for (int i = 0; i < n; i++) {
-        cin >> arr[i];
+    for(int i=0; i<n; i++){
+        cin>>arr[i];
     }
+    bubble(arr,n);
 
-    bubbleSort(n, arr);
-
-
-    cout << "Sorted array: ";
-    for (int i = 0; i < n; i++) {
-        cout << arr[i] << " ";
+    for(int i=0; i<n; i++ ){
+        cout<<arr[i];
     }
-    cout << endl;
-
-    return 0;
 }

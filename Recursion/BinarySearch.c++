@@ -1,39 +1,48 @@
 #include<iostream>
 using namespace std;
+bool isBinary(int arr, int n ,int start, int end, int key){
 
-bool isSorted(int arr[], int n){
-    //baseCase
-
-    if(n==0||n==1){
+    //base case
+    if(start>end){
+        return false;
+    }
+int mid = (start+(end))/2;
+    if(arr[mid]== key){
         return true;
     }
 
-    if(arr[0]>arr[1]){
-        return false;
+    if(arr[mid]<key){
+        return isBinary(arr,mid+1,end,key);
+
     }
     else{
-        bool remaningPart = isSorted(arr+1 ,n-1);
-            return remaningPart;
-        }
+        return isBinary(arr  ,mid-1,end,key);
     }
 
-
+} 
 
 int main(){
     int n;
     cin>>n;
+   
     int arr[n];
 
-    for(int i=0; i<n; i++){
-        cin>>arr[i];
-    }
-    bool ans = isSorted(arr, n);
+    int key;
+    cin>> key;
+
+    int start =0;
+
+    int end = n-1;
+
+   
+
+    bool ans = isBinary(arr,n, start,end,key);
+
     if(ans){
-        cout<<"sorted";
+        cout<<"Element found at index number"<<arr[n];
     }
     else{
-        cout<<"Unsorted";
+        cout<<"Not found";
     }
-
-    return 0;
+return 0;
 }

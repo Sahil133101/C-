@@ -19,7 +19,9 @@ bool checkpalindrome(string str, int i) {
 }
 
 int main() {
-    string str = "NAMAN";
+
+    string str;
+    cin>>str;
 
     bool isPalindrome = checkpalindrome(str, 0);
     if(isPalindrome) {
