@@ -1,1 +1,2 @@
-sort(arr, arr+n);
+
+    // initializeARRAY(n, arr);

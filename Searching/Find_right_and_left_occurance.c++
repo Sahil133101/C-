@@ -27,7 +27,7 @@ int LastOcc(int arr[], int size, int key) {
     int start = 0;
     int end = size - 1;
     int mid = (start + end) / 2;
-    int ans = -1;
+    int ans ;
 
     while (start <= end) {
         if (arr[mid] == key) {
@@ -46,9 +46,9 @@ int LastOcc(int arr[], int size, int key) {
 }
 
 int main() {
-    int even[5] = {1, 2, 3,3, 5};
-    cout << "First Occurrence: " << FirstOcc(even, 5, 3) << endl;
-    cout << "Last Occurrence: " << LastOcc(even, 5, 3) << endl;
+    int even[9] = {1, 2,5,5,5,5,5,7,9};
+    cout << "First Occurrence: " << FirstOcc(even, 9, 5) << endl;
+    cout << "Last Occurrence: " << LastOcc(even, 9, 5) << endl;
 
     return 0;
 }

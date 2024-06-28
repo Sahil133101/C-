@@ -18,7 +18,7 @@ bool isFind(int arr[], int n, int key){
         return false;
         
     }
-    if(arr[0] == key ){
+    if(arr[] == key ){
         return true;
     }
     else{

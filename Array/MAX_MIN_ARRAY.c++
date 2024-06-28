@@ -29,10 +29,11 @@ int getMAX(int n, int arr[]) {
         
 
     }
+    cout<<arr[MAX];
     return MAX;
 }
 
-void initializeARRAY(int n, int arr[]) {
+void initializeARRAY(int arr[]) {
     cout << "Enter " << n << " elements for the array:" << endl;
     for(int i = 0; i < n; i++) {
         cin >> arr[i];
@@ -40,15 +41,14 @@ void initializeARRAY(int n, int arr[]) {
 }
 
 int main() {
-    int n;
-    cout << "Enter the size of the array: ";
-    cin >> n;
+   
 
-    int arr[n];
+    int arr[] = {7 ,1, -17, -7,70,190,17,102,-250,25}
+    int n = size.arr();
 
     initializeARRAY(n, arr);
-    int maxElement = getMAX(n, arr);
-    int minElement  = getMIN(n,arr);
+    int maxElement = getMAX(n ,arr);
+    int minElement  = getMIN(n, arr);
 
     cout << "Maximum element: " << maxElement << endl;
     cout << "Minimum element: " << minElement << endl;
