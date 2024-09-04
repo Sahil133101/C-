@@ -1,56 +1,48 @@
-#include <iostream>
-
+#include<iostream>
 using namespace std;
 
 class Node {
-public:
+    public:
     int data;
-    Node* next;
+    Node* Next;
 
-    Node(int data) {
-        this->data = data;
-        this->next = NULL;
-    }
 
-    // Function to print node data and address
-    void printNode() {
-        cout << "Data: " << data << ", Address: " << (void*)this << endl;
+    Node(int data){
+        this -> data =data;
+        this -> Next = NULL;
     }
 };
+void InsertAtHead( Node* &Head , int newData){
+    //New Node Create
+    Node* temp = new Node(newData);
+    temp -> Next = Head;
 
-// Function to insert a new node at the head of the linked list
-void insertAtHead(Node*& head, int newData) {
-    Node* newNode = new Node(newData);  // Create a new node with the given data
-    newNode->next = head;                // Make the new node point to the current head
-    head = newNode;                      // Update the head pointer to point to the new node
+    Head = temp;
+
 }
 
-// Function to print the linked list with data and addresses
-void printList(Node* head) {
-    while (head != NULL) {
-        head->printNode();
-        head = head->next;
-    }
-    cout << "NULL" << endl;
+void Print(Node* &Head){
+Node* temp = Head;
+
+while(temp != NULL){
+    cout<< temp -> data <<" ";
+    temp = temp -> Next;
+}
+cout<<endl;
 }
 
-int main() {
-    Node* head = NULL;  // Initially, the linked list is empty
+int main(){
 
-    // Create node1 with data 10
     Node* node1 = new Node(10);
 
-    // Set head to point to node1
-    head = node1;
+    //cout<< node1 -> data <<endl;
+    //cout<<node1 -> Next <<endl;
+//Head Pointer to Node1
 
-    cout << "Original list:" << endl;
-    printList(head);
+Node* Head = node1;
+ InsertAtHead(Head , 12);
+ InsertAtHead(Head, 13);
 
-    // Insert node with data 12 at the head
-    insertAtHead(head, 12);
-
-    cout << "List after insertion:" << endl;
-    printList(head);
-
+    Print(Head);
     return 0;
 }
